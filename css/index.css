@@ -205,6 +205,15 @@ header div nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ((max-width: 500px)) {
+  .home .content-section {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .home .content-section div {
+    max-width: 100%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -232,6 +241,14 @@ header div nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media ((max-width: 500px)) {
+  .home .content-destination {
+    flex-direction: column;
+  }
+  .home .content-destination div {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -240,6 +257,30 @@ header div nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media ((max-width: 500px)) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick div {
+    width: 100%;
+  }
+}
+.home .content-pick .btn {
+  max-width: 100%;
+  background-color: #06806f;
+  color: white;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  padding: 1vh;
+}
+@media ((max-width: 500px)) {
+  .home .content-pick .btn {
+    background-color: #17A2B8;
+  }
 }
 .home .content-pick .destination {
   width: 30%;

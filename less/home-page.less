@@ -5,6 +5,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media(@mobile){
+      flex-direction: column;
+      max-width: 100%;
+
+      & div{
+        max-width:100%;
+      }
+    }
 
    
     
@@ -41,6 +50,14 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    
+    @media(@mobile){
+      flex-direction: column;
+
+      & div{
+        width:100%;
+      }
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +70,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media(@mobile){
+      flex-direction: column;
+
+      & div{
+        width:100%;
+      }
+    }
+
+
+    .btn{
+      .buttonstyle(100%; #06806f; white; 2rem);
+    }
+  
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+
   }
 }// home
