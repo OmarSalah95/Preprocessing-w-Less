@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .container {
     max-width: 80%;
   }
@@ -183,7 +183,7 @@ header div {
   padding: 15px;
   margin: auto;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   header div {
     flex-direction: column;
     text-align: center;
@@ -193,7 +193,7 @@ header div nav {
   display: flex;
   margin: auto 0;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   header div nav {
     justify-content: space-around;
   }
@@ -221,7 +221,7 @@ header div nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
     max-width: 100%;
@@ -234,7 +234,7 @@ header div nav a {
   width: 48%;
   padding-right: 1%;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-section .text-content {
     width: auto;
   }
@@ -243,7 +243,7 @@ header div nav a {
   width: 48%;
   padding-left: 1%;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-section .img-content {
     width: auto;
   }
@@ -259,7 +259,7 @@ header div nav a {
   padding-left: 1%;
   padding-right: 0;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .inverse-content .text-content {
     width: auto;
     order: -1;
@@ -273,7 +273,7 @@ header div nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-destination {
     flex-direction: column;
     width: 100%;
@@ -291,7 +291,7 @@ header div nav a {
   display: flex;
   justify-content: space-between;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
     width: 100%;
@@ -308,10 +308,14 @@ header div nav a {
   line-height: 1.5rem;
   padding: 1vh;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-pick .btn {
     background-color: #17A2B8;
   }
+}
+.home .content-pick .btn :hover {
+  transform: rotateZ(360deg);
+  transition: 1s;
 }
 .home .content-pick .destination {
   width: 30%;
@@ -320,7 +324,7 @@ header div nav a {
 .home .content-pick .destination p {
   margin: 1vh auto;
 }
-@media ((max-width: 500px)) {
+@media screen and (max-width: 500px) {
   .home .content-pick .destination {
     margin: 5% auto;
     width: 80%;

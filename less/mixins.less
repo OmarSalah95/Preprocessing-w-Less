@@ -14,7 +14,12 @@
     line-height: 1.5rem;
     padding: 1vh;
 
-    @media(@mobile){
+    @media@mobile{
         background-color:@button-bg
       }
+
+    .rotationanimation(@angle; @transition){
+                    transform:rotateZ(@angle);
+                    transition: @transition;                                
+    }
 }

@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-    @media(@mobile){
+    @media@mobile{
       flex-direction: column;
       max-width: 100%;
 
@@ -21,7 +21,7 @@
       width: 48%;
       padding-right: 1%;
 
-      @media(@mobile){
+      @media@mobile{
         width:auto;
       }
 
@@ -31,7 +31,7 @@
       width: 48%;
       padding-left: 1%;
 
-      @media(@mobile){
+      @media@mobile{
         width:auto;
       }
       
@@ -49,7 +49,7 @@
       padding-left: 1%;
       padding-right: 0;
 
-      @media(@mobile){
+      @media@mobile{
         width:auto;
         order: -1;
       }
@@ -66,7 +66,7 @@
     width: 75%;
     margin: 0 auto 30px;
     
-    @media(@mobile){
+    @media@mobile{
       flex-direction: column;
       width:100%;
 
@@ -86,7 +86,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media(@mobile){
+    @media@mobile{
       flex-direction: column;
         width:100%;
       }
@@ -95,6 +95,11 @@
 
     .btn{
       .buttonstyle(100%; #06806f; white; 2rem);
+
+      & :hover{
+        .rotationanimation(360deg; 1s);
+      }
+
     }
   
     .destination {
@@ -106,7 +111,7 @@
       }
 
 
-      @media(@mobile){
+      @media@mobile{
         margin: 5% auto;
         width: 80%;
       }
