@@ -12,10 +12,19 @@ header{
         max-width: 800px;
         padding: 15px;
         margin: auto;
+
+        @media(@mobile){
+            flex-direction: column;
+            text-align: center;
+        }
         
         nav{
             display: flex;;
             margin: auto 0;
+
+            @media(@mobile){
+                justify-content: space-around;
+            }
       
             a{
                 text-decoration: none;

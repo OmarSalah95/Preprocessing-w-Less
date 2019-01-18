@@ -183,9 +183,20 @@ header div {
   padding: 15px;
   margin: auto;
 }
+@media ((max-width: 500px)) {
+  header div {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 header div nav {
   display: flex;
   margin: auto 0;
+}
+@media ((max-width: 500px)) {
+  header div nav {
+    justify-content: space-around;
+  }
 }
 header div nav a {
   text-decoration: none;
